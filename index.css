@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Home Page Styles */
+.home-container {
+    background-image: url('https://assets.ccbp.in/frontend/static-website/flats-list-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.home-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.home-text-container {
+    margin-bottom: 30px;
+}
+
+.home-description {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.home-contact {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.book-flat-btn {
+    background-color: #f19116;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(241, 145, 22, 0.3);
+}
+
+.book-flat-btn:hover {
+    background-color: #d17a0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(241, 145, 22, 0.4);
+}
+
+/* Flats List Page Styles */
+.flats-list-container {
+    background-color: #222222;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.flats-heading {
+    font-size: 36px;
+    color: #f19116;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.flats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flat-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.flat-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.flat-info {
+    padding: 20px;
+}
+
+.flat-title {
+    font-size: 24px;
+    color: #0f0e46;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.flat-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location-text {
+    color: #7b8794;
+    font-size: 16px;
+}
+
+/* Flat Details Page Styles */
+.flat-details-container {
+    background-color: #222222;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.flat-detail-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.flat-details-content {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.flat-detail-heading {
+    font-size: 32px;
+    color: #0f0e46;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.flat-detail-description {
+    font-size: 18px;
+    color: #6c6b70;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.flat-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.back-btn, .confirm-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn {
+    background-color: #7b8794;
+    color: #ffffff;
+}
+
+.back-btn:hover {
+    background-color: #6c6b70;
+}
+
+.confirm-btn {
+    background-color: #f19116;
+    color: #ffffff;
+}
+
+.confirm-btn:hover {
+    background-color: #d17a0f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-heading {
+        font-size: 36px;
+    }
+    
+    .home-description {
+        font-size: 20px;
+    }
+    
+    .flats-heading {
+        font-size: 28px;
+    }
+    
+    .flat-detail-heading {
+        font-size: 28px;
+    }
+    
+    .flat-detail-description {
+        font-size: 16px;
+    }
+    
+    .flat-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .back-btn, .confirm-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-heading {
+        font-size: 28px;
+    }
+    
+    .home-description {
+        font-size: 18px;
+    }
+    
+    .flats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .flat-details-content {
+        padding: 20px;
+    }
+}
