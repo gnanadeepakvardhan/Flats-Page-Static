@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="homePage" class="page">
+        <div class="home-container">
+            <div class="home-content">
+                <h1 class="home-heading">Sunrise Avenue</h1>
+                <div class="home-text-container">
+                    <p class="home-description">Move to what moves you</p>
+                    <p class="home-subtitle">Contact us</p>
+                    <p class="home-contact">+91 98765 43210</p>
+                </div>
+                <button class="book-flat-btn" onclick="showPage('flatsListPage')">Book Flat</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="flatsListPage" class="page" style="display: none;">
+        <div class="flats-list-container">
+            <h1 class="flats-heading">Flats</h1>
+            <div class="flats-grid">
+                <div class="flat-card" onclick="showPage('flat3BHKPage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png" class="flat-image" alt="3BHK Flat">
+                    <div class="flat-info">
+                        <h3 class="flat-title">3BHK Flat</h3>
+                        <div class="flat-location">
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" class="location-icon" alt="Location">
+                            <span class="location-text">Dlf 5, Phase 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flat-card" onclick="showPage('flat2BHKPage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png" class="flat-image" alt="2BHK Flat">
+                    <div class="flat-info">
+                        <h3 class="flat-title">2BHK Flat</h3>
+                        <div class="flat-location">
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" class="location-icon" alt="Location">
+                            <span class="location-text">Dlf 5, Phase 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flat-card" onclick="showPage('flat4BHKPage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png" class="flat-image" alt="4BHK Flat">
+                    <div class="flat-info">
+                        <h3 class="flat-title">4BHK Flat</h3>
+                        <div class="flat-location">
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png" class="location-icon" alt="Location">
+                            <span class="location-text">Dlf 5, Phase 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="flat3BHKPage" class="page" style="display: none;">
+        <div class="flat-details-container">
+            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png" class="flat-detail-image" alt="3BHK Flat Details">
+            <div class="flat-details-content">
+                <h1 class="flat-detail-heading">3BHK Flat</h1>
+                <p class="flat-detail-description">This is a fully furnished house with handmade furniture including a luxury en-suite facilities pack. It builds up area of about 1600sq.ft. A spacious home for you to live in.</p>
+                <div class="flat-actions">
+                    <button class="back-btn" onclick="showPage('flatsListPage')">Back</button>
+                    <button class="confirm-btn" onclick="showPage('homePage')">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="flat2BHKPage" class="page" style="display: none;">
+        <div class="flat-details-container">
+            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png" class="flat-detail-image" alt="2BHK Flat Details">
+            <div class="flat-details-content">
+                <h1 class="flat-detail-heading">2BHK Flat</h1>
+                <p class="flat-detail-description">A minimalist house made for modern-day families. It is fully furnished with trending furniture. Its built-up area is about 1200sq.ft.</p>
+                <div class="flat-actions">
+                    <button class="back-btn" onclick="showPage('flatsListPage')">Back</button>
+                    <button class="confirm-btn" onclick="showPage('homePage')">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="flat4BHKPage" class="page" style="display: none;">
+        <div class="flat-details-container">
+            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png" class="flat-detail-image" alt="4BHK Flat Details">
+            <div class="flat-details-content">
+                <h1 class="flat-detail-heading">4BHK Flat</h1>
+                <p class="flat-detail-description">A contemporary home with more color and vibrancy. It is fully furnished with elegant furniture. Its built-up area is about 3600sq.ft.</p>
+                <div class="flat-actions">
+                    <button class="back-btn" onclick="showPage('flatsListPage')">Back</button>
+                    <button class="confirm-btn" onclick="showPage('homePage')">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
